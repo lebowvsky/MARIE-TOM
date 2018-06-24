@@ -1,0 +1,484 @@
+@font-face {
+    font-family: 'foxCat';
+    src: url('/contents/fonts/fox_cat.ttf'),
+    		url('/contents/fonts/fox_cat.otf')
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+body {
+	font-family: 'Quicksand', Verdana, sans-serif;
+	background-color: white;
+}
+
+h4 {
+	font-size: 1.2em;
+	color: orange;
+
+}
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    width: 30%;
+    border-style: solid;
+    border-color: rgba(84, 167, 89, 1);
+    border-width: 2px 0 0 0;
+    border-radius: 15px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: rgba(84, 167, 89, 1);
+    border-width: 0 0 2px 0;
+    border-radius: 15px;
+}
+
+.hrWhite {
+	overflow: visible; /* For IE */
+    height: 30px;
+    width: 30%;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px 0 0 0;
+    border-radius: 15px;
+}
+
+.hrWhite:before {
+	display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    border-radius: 15px;
+}
+
+.panel {
+	background-color: rgba(84, 167, 89, 1);
+	border-color: rgba(84, 167, 89, 1);
+	box-shadow: none;
+}
+
+/*	****************	Vague	******************	*/
+#wave {
+
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	left: 0;
+	height: 60vh;
+	width: 100%;
+	background: rgba(152, 78, 140, 1) url('../contents/images/cochon.png');
+	background-size: cover;
+	z-index: -10;
+}
+
+#curve {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#curve path {
+	fill: white;
+}
+
+/*	****************	MENUS	******************	*/
+
+@keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-30px);}
+        60% {transform: translateY(-15px);}
+}
+
+@-webkit-@keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+        40% {transform: translateY(-30px);}
+        60% {transform: translateY(-15px);}
+}
+
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-25%) rotate(-5deg); }
+  30% { transform: translateX(20%) rotate(3deg); }
+  45% { transform: translateX(-15%) rotate(-3deg); }
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); }
+}
+
+
+@-webkit-@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-25%) rotate(-5deg); }
+  30% { transform: translateX(20%) rotate(3deg); }
+  45% { transform: translateX(-15%) rotate(-3deg); }
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); }
+}
+
+
+
+#left_baner {
+	position: fixed;
+	z-index: 10;
+	left: 20px;
+	top: 5vh;
+	height: 80vh;
+	width: 250px;
+	border-radius: 5px;
+	background-color: rgba(84, 167, 89, 1);
+	overflow: scroll;
+}
+
+
+/*	Menu lg */
+#menu_md_lg {
+	position: relative;
+	left: 20px;
+	width: 220px;
+	margin-top: 5vh;
+	color: white;
+}
+
+#accordion1 {
+	text-align: right;
+	font-size: 1.1em;
+}
+
+.bckgnd-black {
+	margin-bottom: 30px;
+}
+
+.bckgnd-black div {
+	
+}
+
+.active {
+	color: rgba(128, 81, 21, 1);
+}
+
+.bckgnd-black {
+	border-color : rgba(84, 167, 89, 1);
+	background-color: rgba(84, 167, 89, 1);
+}
+
+.bckgnd-black a {
+	font-family: 'Quicksand', foxCat, sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+.collapse div a {
+	color: rgba(215, 168, 109, 1);
+	border: none;
+}
+
+
+.bckgnd-black a:hover {
+	text-decoration: none;
+	color: rgba(128, 81, 21, 1);
+}
+
+.bckgnd-black .collapse {
+	list-style-type: none;
+	margin-right: 15px;
+	transition: 1s;
+}
+
+#social {
+	position: absolute;
+	bottom : 10px;
+	width: 100%;
+	margin: auto;
+}
+
+#social hr {
+	width: 80%;
+}
+
+#social a {
+	width: 20px;
+	margin: 10px;
+	color: white;
+}
+
+#social span:hover {
+	color: rgba(128, 81, 21, 1);
+	animation: wobble 1s;
+	@-webkit-animation: wobble 1s;
+}
+
+.bckgnd-black {
+
+	background-color: rgba(84, 167, 89, 1);
+}
+
+a:active {
+	color: rgba(128, 81, 21, 1);
+}
+
+/*	Menu xs	*/
+
+
+
+
+/*	**************	CONTENU	********************	*/
+
+#corps {
+	
+}
+
+#content {
+	
+}
+
+#bandeau {
+	
+	background-size: cover;
+	height: 600px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	color: white;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+#content1, #content2, #content3 {
+	border-radius: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: justify;
+	font-size: 1.2em;
+	overflow: hidden;
+	background-color: rgba(250, 250, 250, 0.8);
+}
+
+#content1 {
+	margin-bottom: 150px;
+}
+
+#content2 {
+	margin-bottom: 150px;
+}
+
+#content3 {
+	margin-bottom: 150px;
+}
+
+.textContent {
+
+	margin-bottom: 30px;
+}
+
+#accueil {
+	text-align: center;
+}
+
+.produit {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/*	***************	CAROUSEL	***************		*/
+
+#carousel {
+	height: 600px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 50px;
+}
+
+.carousel-inner a{
+}
+
+.carousel-inner {
+	border-radius: 50px;
+}
+
+#carousel .item{
+	height: 600px;
+	width: 100%;	
+}
+
+#carousel .image-carousel {
+	height: 600px;
+	width: 100%;
+	
+}
+
+/*	*************** LOGO  ******************		*/
+
+#logo {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+
+#logo img {
+	height: 200px;
+}
+
+/*	*************** LA FERME ******************		*/
+
+.actualite {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.actualiteImageWrapper {
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.imageActu {
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px;
+	height: 300px;
+}
+
+
+
+/*	*************** ELEVAGE *******************		*/
+
+.elevage {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.elevage img{
+	max-width: 100%;
+}
+
+.produit{
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+
+}
+
+.produit img {
+	margin: auto;
+}
+
+.imageElevage {
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px;
+}
+
+.imageProduit {
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px;
+}
+
+/*	*************** TRACTION *******************	*/
+
+.prestation {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.prestationImageWrapper {
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.imagePrestation {
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px;
+	height: 400px;
+}
+
+/*	*************** CONTACT *******************		*/
+@keyframes envoyerTourne {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-@keyframes envoyerTourne {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+
+address .row:first-child {
+	margin-top: 50px;
+}
+
+address .row {
+	margin-bottom: 50px;
+}
+
+#boutonEnvoyerContact {
+	height: 50px;
+}
+
+#boutonEnvoyerContact button {
+	color: black;
+	background-color: rgba(120, 224, 143,0.0);
+	border: none;
+	text-shadow: 2px 2px 2px grey;
+}
+
+#boutonEnvoyerContact button:hover {
+	text-shadow: none;
+	animation: envoyerTourne 1s;
+	@-webkit-animation: envoyerTourne 1s;
+}
+
+
+/*	*************** FOOTER 	*******************		*/
+footer {
+	position: relative;
+	bottom: 0px;
+	z-index: 1;
+
+	height: 120px;
+	padding-top: 15px;
+	background-color: rgba(84, 167, 89, 1);
+	color: white;
+	text-align: center;
+}
+
+#icon_admin{
+	float: right;
+	height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

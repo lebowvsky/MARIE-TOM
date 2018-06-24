@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'foxCat';
+    src: url('/contents/fonts/fox_cat.ttf'),
+    		url('/contents/fonts/fox_cat.otf')
+}
+
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+
+body {
+	font-family: 'Quicksand', Verdana, sans-serif;
+	background-color: white;
+}
+
+#container, #site, #corps {
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    height: 30px;
+    width: 30%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 15px;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 15px;
+}
+
+
+/*	****************	Vague	******************	*/
+#wave {
+
+	padding: 0;
+	margin: 0;
+	position: fixed;
+	left: 0;
+	height: 60vh;
+	width: 100%;
+	background: rgba(152, 78, 140, 1) url('../contents/images/cochon.png');
+	background-size: cover;
+	z-index: -10;
+}
+
+#curve {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+#curve path {
+	fill: white;
+}
+
+
+/*	*************** MENU 	*******************		*/
+#menu_xs_sm {
+
+}
+
+
+/*	*************** LOGO  ******************		*/
+
+#logo {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+
+#logo img {
+	height: 200px;
+}
+
+
+/*	*************** CONTENU *******************		*/
+#bandeau {
+	color: white;
+	height: 200px;
+	background-size: cover;
+}
+
+#content1 {
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 200px;
+	margin-bottom: 50px;
+	text-align: justify;
+	font-size: 1.2em;
+	overflow: hidden;
+	background-color: rgba(250, 250, 250, 0.8);
+}
+
+#content2, #content3 {
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-align: justify;
+	font-size: 1.2em;
+	overflow: hidden;
+	background-color: rgba(250, 250, 250, 0.8);
+}
+
+.elevage {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+/*	Photos		*/
+.imageProduit {
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px;
+}
+/*	La Ferme	*/
+.actualite {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.actualiteImageWrapper {
+	padding: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.imageElevage {
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px;
+}
+
+.imageActu {
+	border-radius: 5px;
+	box-shadow: 0px 3px 5px;
+	height: 300px;
+}
+
+.imageElevageWrapper {
+	width: 100%;
+}
+
+.imageElevage {
+	width: 100%;
+}
+
+/*	Brebis vaches	*/
+.produit {
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+/*	Contact	*/
+.contactItem {
+	 text-align: center;
+}
+
+#boutonEnvoyerContact button {
+	color: black;
+	background-color: rgba(120, 224, 143,0.0);
+	border: none;
+	text-shadow: 2px 2px 2px grey;
+}
+
+
+
+
+
+/*	*************** FOOTER 	*******************		*/
+footer {
+	position: relative;
+	height: 80px;
+	padding-top: 15px;
+	background-color: rgba(84, 167, 89, 1);
+	color: white;
+	text-align: center;
+}
